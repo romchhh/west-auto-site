@@ -35,6 +35,7 @@ export default function Navbar({ transparent = false }: { transparent?: boolean 
         <div className={styles.center}>
           <a href="/#proces">Покупка</a>
           <a href="/#avto">Автомобілі</a>
+          <a href="/#vidguky">Відгуки</a>
           <a href="/#faq">Питання</a>
           <a href="/kontakty">Контакти</a>
         </div>
@@ -98,6 +99,7 @@ export default function Navbar({ transparent = false }: { transparent?: boolean 
         <nav className={styles.drawerNav} aria-label="Мобільна навігація">
           <a href="/#proces" onClick={() => setMenuOpen(false)}>Покупка</a>
           <a href="/#avto" onClick={() => setMenuOpen(false)}>Автомобілі</a>
+          <a href="/#vidguky" onClick={() => setMenuOpen(false)}>Відгуки</a>
           <a href="/#faq" onClick={() => setMenuOpen(false)}>Питання</a>
           <a href="/kontakty" onClick={() => setMenuOpen(false)}>Контакти</a>
         </nav>

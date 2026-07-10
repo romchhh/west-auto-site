@@ -48,6 +48,7 @@ export default function Footer() {
           <a href="/#perevahy">Переваги</a>
           <a href="/#proces">Як проходить покупка</a>
           <a href="/#avto">Автомобілі</a>
+          <a href="/#vidguky">Відгуки</a>
           <a href="/#faq">Питання</a>
           <a href="/kontakty">Контакти</a>
         </nav>

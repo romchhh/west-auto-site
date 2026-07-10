@@ -52,12 +52,39 @@ export const PROCESS_CARDS = [
   },
 ] as const
 
+export const REVIEWS = [
+  { id: 'HE2D7l6i84k', image: '/reviews/HE2D7l6i84k.jpg', youtube: 'https://youtube.com/shorts/HE2D7l6i84k' },
+  { id: 'ystrvHeQBf4', image: '/reviews/ystrvHeQBf4.jpg', youtube: 'https://youtube.com/shorts/ystrvHeQBf4' },
+  { id: 'q91ZTG3nFhE', image: '/reviews/q91ZTG3nFhE.jpg', youtube: 'https://youtube.com/shorts/q91ZTG3nFhE' },
+  { id: '8k8F-TOOWSI', image: '/reviews/8k8F-TOOWSI.jpg', youtube: 'https://youtube.com/shorts/8k8F-TOOWSI' },
+  { id: 'g_qHylHTVj8', image: '/reviews/g_qHylHTVj8.jpg', youtube: 'https://youtube.com/shorts/g_qHylHTVj8' },
+  { id: '3bCnryEQduo', image: '/reviews/3bCnryEQduo.jpg', youtube: 'https://youtube.com/shorts/3bCnryEQduo' },
+  { id: '3xOrOvOoN8Y', image: '/reviews/3xOrOvOoN8Y.jpg', youtube: 'https://youtube.com/shorts/3xOrOvOoN8Y' },
+  { id: 'Vq9WB_2VUVc', image: '/reviews/Vq9WB_2VUVc.jpg', youtube: 'https://youtube.com/shorts/Vq9WB_2VUVc' },
+  { id: 'Opwjf0p5Awo', image: '/reviews/Opwjf0p5Awo.jpg', youtube: 'https://youtube.com/shorts/Opwjf0p5Awo' },
+  { id: 'roDMeV6w3To', image: '/reviews/roDMeV6w3To.jpg', youtube: 'https://youtube.com/shorts/roDMeV6w3To' },
+  { id: 'vYEvpZwqv48', image: '/reviews/vYEvpZwqv48.jpg', youtube: 'https://youtube.com/shorts/vYEvpZwqv48' },
+  { id: 'WmBXnG2hiRI', image: '/reviews/WmBXnG2hiRI.jpg', youtube: 'https://youtube.com/shorts/WmBXnG2hiRI' },
+  { id: 'ufxVrpXb5yk', image: '/reviews/ufxVrpXb5yk.jpg', youtube: 'https://youtube.com/shorts/ufxVrpXb5yk' },
+  { id: 'oJFcjI0LHWk', image: '/reviews/oJFcjI0LHWk.jpg', youtube: 'https://youtube.com/shorts/oJFcjI0LHWk' },
+  { id: 'aOa-viJiYKE', image: '/reviews/aOa-viJiYKE.jpg', youtube: 'https://youtube.com/shorts/aOa-viJiYKE' },
+  { id: '0_xok7HvNqo', image: '/reviews/0_xok7HvNqo.jpg', youtube: 'https://youtube.com/shorts/0_xok7HvNqo' },
+  { id: 'Dcv8KQcZB1s', image: '/reviews/Dcv8KQcZB1s.jpg', youtube: 'https://youtube.com/shorts/Dcv8KQcZB1s' },
+  { id: 'sXedezimulQ', image: '/reviews/sXedezimulQ.jpg', youtube: 'https://youtube.com/shorts/sXedezimulQ' },
+  { id: 'o3FU6bVLPeU', image: '/reviews/o3FU6bVLPeU.jpg', youtube: 'https://youtube.com/shorts/o3FU6bVLPeU' },
+  { id: '-4BqBKteToo', image: '/reviews/id-4BqBKteToo.jpg', youtube: 'https://youtube.com/shorts/-4BqBKteToo' },
+  { id: '2GW3c98FHeg', image: '/reviews/2GW3c98FHeg.jpg', youtube: 'https://youtube.com/shorts/2GW3c98FHeg' },
+  { id: 'lV8XD-qblSo', image: '/reviews/lV8XD-qblSo.jpg', youtube: 'https://youtube.com/shorts/lV8XD-qblSo' },
+  { id: '8wHE48xijGY', image: '/reviews/8wHE48xijGY.jpg', youtube: 'https://youtube.com/shorts/8wHE48xijGY' },
+  { id: 'ZWVRXQFEFfQ', image: '/reviews/ZWVRXQFEFfQ.jpg', youtube: 'https://youtube.com/shorts/ZWVRXQFEFfQ' },
+] as const
+
 export const INSTAGRAM_POSTS = [
-  { id: 'DZU6i0eiKvX', url: 'https://www.instagram.com/p/DZU6i0eiKvX/' },
+
   { id: 'DY6xhu8DQ6w', url: 'https://www.instagram.com/p/DY6xhu8DQ6w/' },
   { id: 'DY6xCttty2i', url: 'https://www.instagram.com/p/DY6xCttty2i/' },
   { id: 'DY6w7gwDXYI', url: 'https://www.instagram.com/p/DY6w7gwDXYI/' },
-  { id: 'DYW3ihgjbHs', url: 'https://www.instagram.com/p/DYW3ihgjbHs/' },
+
   { id: 'DaSpF-4iDZ1', url: 'https://www.instagram.com/p/DaSpF-4iDZ1/' },
   { id: 'DaSrSEtiHmm', url: 'https://www.instagram.com/p/DaSrSEtiHmm/' },
   { id: 'DZmh_r1jqaI', url: 'https://www.instagram.com/p/DZmh_r1jqaI/' },

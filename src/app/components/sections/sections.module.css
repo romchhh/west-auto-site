@@ -316,6 +316,103 @@
   flex-shrink: 0;
 }
 
+/* reviews */
+.reviewCard {
+  position: relative;
+  flex: 0 0 220px;
+  scroll-snap-align: start;
+  aspect-ratio: 9 / 16;
+  padding: 0;
+  border: none;
+  border-radius: 18px;
+  overflow: hidden;
+  cursor: pointer;
+  background: var(--charcoal);
+  box-shadow: 0 8px 32px rgba(17, 17, 17, 0.12);
+  transition: transform 0.22s, box-shadow 0.22s;
+}
+
+.reviewCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(17, 17, 17, 0.18);
+}
+
+.reviewImage {
+  object-fit: cover;
+  transition: opacity 0.25s ease;
+}
+
+.reviewImageHidden {
+  opacity: 0;
+}
+
+.reviewPreview {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.reviewOverlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: linear-gradient(to top, rgba(17, 17, 17, 0.55) 0%, rgba(17, 17, 17, 0.08) 50%, rgba(17, 17, 17, 0.2) 100%);
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.reviewCardPreview .reviewOverlay {
+  opacity: 0;
+}
+
+.reviewPlay {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--primary-red);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s, background 0.2s, opacity 0.2s;
+}
+
+.reviewCard:hover .reviewPlay {
+  transform: translate(-50%, -50%) scale(1.06);
+  background: #fff;
+}
+
+.reviewCardPreview .reviewPlay {
+  opacity: 0;
+}
+
+.reviewsFollow {
+  margin: 0;
+  font-size: 15px;
+  color: var(--dark-gray);
+  line-height: 1.6;
+}
+
+.reviewsFollow a {
+  color: var(--primary-red);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.reviewsFollow a:hover {
+  text-decoration: underline;
+}
+
 /* faq */
 .faqLayout {
   display: grid;
@@ -563,6 +660,17 @@
     flex: 0 0 85%;
     max-width: 320px;
     height: 440px;
+  }
+
+  .reviewCard {
+    flex: 0 0 42%;
+    max-width: 200px;
+    border-radius: 16px;
+  }
+
+  .reviewPlay {
+    width: 48px;
+    height: 48px;
   }
 
   .instagramFooter {
