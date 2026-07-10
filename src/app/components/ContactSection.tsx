@@ -1,8 +1,8 @@
 'use client'
 import Image from 'next/image'
 import { BRAND } from '../brand'
-import { phoneTel } from '../seo'
 import ContactForm from './ContactForm'
+import ContactMethodsList from './ContactMethodsList'
 import { SectionHeading } from './sections/SectionHeading'
 import styles from './ContactSection.module.css'
 
@@ -11,9 +11,14 @@ export default function ContactSection() {
     <section id="kontakt" className={styles.section}>
       <div className={styles.inner}>
         <SectionHeading
-          title={<>Поговорімо<br /><em>про авто</em></>}
-          lead="Залиште заявку — розрахуємо повну вартість з доставкою та розмитненням."
+          title={<>Маєте <em>запитання?</em></>}
+          lead="Залиште заявку або зв'яжіться з нами будь-яким зручним способом."
         />
+
+        <p className={styles.contactNote}>
+          Залиште заявку вже сьогодні — і ми безкоштовно підберемо для вас найкращі варіанти автомобілів під ваш
+          бюджет.
+        </p>
 
         <div className={styles.panel}>
           <div className={styles.visual}>
@@ -26,13 +31,7 @@ export default function ContactSection() {
             />
             <div className={styles.visualOverlay} aria-hidden="true" />
             <div className={styles.visualContent}>
-              <p className={styles.visualText}>
-                Підбір · аукціони США · доставка · розмитнення
-              </p>
-              <div className={styles.visualContacts}>
-                <a href={`tel:${phoneTel(BRAND.phone)}`}>{BRAND.phone}</a>
-                <a href={`mailto:${BRAND.email}`}>{BRAND.email}</a>
-              </div>
+              <ContactMethodsList />
             </div>
           </div>
 

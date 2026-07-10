@@ -45,8 +45,9 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.top}>
         <nav className={styles.links} aria-label="Навігація в підвалі">
-          <a href="/#perevahy">Переваги</a>
-          <a href="/#proces">Як проходить покупка</a>
+          <a href="/#oplata">Оплата</a>
+          <a href="/#perevahy">Чому ми</a>
+          <a href="/#proces">Етапи</a>
           <a href="/#avto">Автомобілі</a>
           <a href="/#vidguky">Відгуки</a>
           <a href="/#faq">Питання</a>

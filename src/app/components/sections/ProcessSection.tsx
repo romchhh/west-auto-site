@@ -12,15 +12,15 @@ export default function ProcessSection() {
     <section id="proces" className={styles.section}>
       <div className={styles.inner}>
         <SectionHeading
-          title={<>Як проходить <em>покупка</em></>}
-          lead="Три зрозумілі етапи — від першої консультації до отримання авто у вашому місті."
+          title={<>Етапи <em>співпраці</em></>}
+          lead="Весь процес — зрозумілий та прозорий"
         />
         <div className={styles.processGrid}>
-          {PROCESS_CARDS.map(({ title, description, image, cta }) => (
-            <article key={title} className={styles.processCard}>
+          {PROCESS_CARDS.map(({ steps, image, cta }) => (
+            <article key={steps[0].title} className={styles.processCard}>
               <Image
                 src={image}
-                alt={title}
+                alt={steps[0].title}
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
                 className={styles.processImage}
@@ -28,8 +28,12 @@ export default function ProcessSection() {
               <div className={styles.processOverlay} aria-hidden="true" />
               <div className={styles.processContent}>
                 <div className={styles.processCopy}>
-                  <h3 className={styles.processTitle}>{title}</h3>
-                  <p className={styles.processText}>{description}</p>
+                  {steps.map((step) => (
+                    <div key={step.title} className={styles.processStep}>
+                      <h3 className={styles.processTitle}>{step.title}</h3>
+                      <p className={styles.processText}>{step.description}</p>
+                    </div>
+                  ))}
                 </div>
                 <button type="button" className={styles.processCta} onClick={openForm}>
                   {cta}

@@ -16,7 +16,6 @@ export default function FaqSection() {
           <div className={styles.faqIntro}>
             <SectionHeading
               title={<>Часті <em>запитання</em></>}
-              lead="Відповіді на основні питання про підбір, доставку та розмитнення авто з США."
             />
             <div className={styles.faqHelp}>
               <p className={styles.faqHelpLabel}>Не знайшли відповідь?</p>
@@ -53,7 +52,7 @@ export default function FaqSection() {
                     <span className={styles.faqNumber}>{number}</span>
                     <span className={styles.faqQuestionText}>{question}</span>
                     <span className={styles.faqIcon} aria-hidden="true">
-                      <svg width="12" height="8" viewBox="0 0 12 8" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                      <svg width="14" height="10" viewBox="0 0 12 8" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M1 1.5 L6 6.5 L11 1.5" />
                       </svg>
                     </span>

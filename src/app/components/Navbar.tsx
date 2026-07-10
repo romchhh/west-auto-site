@@ -33,7 +33,7 @@ export default function Navbar({ transparent = false }: { transparent?: boolean 
         </a>
 
         <div className={styles.center}>
-          <a href="/#proces">Покупка</a>
+          <a href="/#proces">Етапи співпраці</a>
           <a href="/#avto">Автомобілі</a>
           <a href="/#vidguky">Відгуки</a>
           <a href="/#faq">Питання</a>

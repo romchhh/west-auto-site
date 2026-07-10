@@ -12,6 +12,14 @@
   gap: var(--section-gap);
 }
 
+.contactNote {
+  margin: -12px 0 0;
+  max-width: 68ch;
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--dark-gray);
+}
+
 .panel {
   width: 100%;
   display: grid;
@@ -86,6 +94,44 @@
 
 .visualContacts a:hover {
   color: var(--primary-red);
+}
+
+.contactMethods {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contactMethods a {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(255, 255, 255, 0.92);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  transition: color 0.2s;
+}
+
+.contactMethods a:hover {
+  color: #fff;
+}
+
+.contactMethodIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-red);
+  flex-shrink: 0;
+  line-height: 0;
+}
+
+.contactMethods a:hover .contactMethodIcon {
+  color: #fff;
 }
 
 .formCard {

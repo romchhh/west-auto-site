@@ -46,8 +46,8 @@ export default function CarsSection() {
       <div className={styles.inner}>
         <div className={styles.carsHeader}>
           <SectionHeading
-            title={<>Приклади <em>автомобілів</em></>}
-            lead="Реальні варіанти з аукціонів США — підбір під ваш бюджет і побажання."
+            title={<>Виконані <em>замовлення</em></>}
+            lead="Реальні автомобілі, які вже знайшли своїх власників"
           />
           <div className={styles.carouselNav}>
             <button
@@ -84,8 +84,17 @@ export default function CarsSection() {
                   title={`Instagram — ${post.id}`}
                   className={styles.instagramEmbed}
                   loading="lazy"
+                  scrolling="no"
                   allowFullScreen
                   referrerPolicy="no-referrer-when-downgrade"
+                  tabIndex={-1}
+                />
+                <a
+                  href={post.url}
+                  className={styles.instagramCardLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Відкрити пост Instagram ${post.id}`}
                 />
               </article>
             ))}
@@ -94,7 +103,9 @@ export default function CarsSection() {
 
         <div className={styles.instagramFooter}>
           <p className={styles.instagramFollow}>
-            Більше прикладів — у нашому{' '}
+            Кожен автомобіль у цьому розділі — це результат індивідуального підбору під бюджет і потреби клієнта.
+            Ми не продаємо шаблонні рішення — ми допомагаємо знайти саме той автомобіль, який буде найкращим вибором
+            для вас. Більше прикладів — у нашому{' '}
             <a href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer">
               Instagram @west_auto_shipping
             </a>

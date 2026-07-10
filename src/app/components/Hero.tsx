@@ -9,7 +9,7 @@ export default function Hero() {
   const { openForm } = useContactModal()
 
   return (
-    <section className={styles.hero} aria-label="Головний банер">
+    <section id="hero" className={styles.hero} aria-label="Головний банер">
       <div className={styles.bg} aria-hidden="true">
         <Image
           src={BRAND.heroDesktop}
@@ -55,7 +55,7 @@ export default function Hero() {
               <p className={styles.cardSub}>Отримайте розрахунок вартості<br />авто з доставкою та розмитненням</p>
             </div>
             <div className={styles.cardArrow}>
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="white" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 16 16" fill="none" stroke="white" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="M2 14 L14 2 M6 2 H14 V10" />
               </svg>
             </div>

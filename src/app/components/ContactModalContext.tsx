@@ -1,6 +1,7 @@
 'use client'
 import { createContext, useContext, useState, useEffect, useCallback } from 'react'
 import ContactModal from './ContactModal'
+import FloatingCtaButton from './FloatingCtaButton'
 
 type ContactModalContextValue = {
   openForm: () => void
@@ -26,6 +27,7 @@ export function ContactModalProvider({ children }: { children: React.ReactNode }
   return (
     <ContactModalContext.Provider value={{ openForm, closeForm, formOpen }}>
       {children}
+      <FloatingCtaButton />
       <ContactModal open={formOpen} onClose={closeForm} />
     </ContactModalContext.Provider>
   )
