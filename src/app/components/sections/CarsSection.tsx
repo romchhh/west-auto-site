@@ -47,7 +47,11 @@ export default function CarsSection() {
         <div className={styles.carsHeader}>
           <SectionHeading
             title={<>Виконані <em>замовлення</em></>}
-            lead="Реальні автомобілі, які вже знайшли своїх власників"
+            lead={
+              <>
+                Головне УТП — <strong>70% оплата на капоті</strong>. Реальні автомобілі, які вже знайшли своїх власників.
+              </>
+            }
           />
           <div className={styles.carouselNav}>
             <button

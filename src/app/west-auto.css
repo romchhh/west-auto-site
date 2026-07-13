@@ -58,6 +58,11 @@
   max-width: 48ch;
 }
 
+.west-auto .section-lead strong {
+  font-weight: 700;
+  color: var(--primary-red);
+}
+
 @media (min-width: 981px) {
   .west-auto {
     --section-px: 64px;

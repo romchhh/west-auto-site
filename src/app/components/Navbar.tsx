@@ -33,10 +33,12 @@ export default function Navbar({ transparent = false }: { transparent?: boolean 
         </a>
 
         <div className={styles.center}>
+          <a href="/#oplata">Оплата на капоті</a>
+          <a href="/#pro-nas">Про нас</a>
+          <a href="/#perevahy">Чому ми</a>
           <a href="/#proces">Етапи співпраці</a>
-          <a href="/#avto">Автомобілі</a>
-          <a href="/#vidguky">Відгуки</a>
-          <a href="/#faq">Питання</a>
+          <a href="/#faq">Популярні питання</a>
+          <a href="/#viyskovym">Для військових</a>
           <a href="/kontakty">Контакти</a>
         </div>
 
@@ -48,11 +50,12 @@ export default function Navbar({ transparent = false }: { transparent?: boolean 
             rel="noopener noreferrer"
             aria-label="Telegram"
           >
-            <TelegramIcon size={40} />
+            <TelegramIcon size={34} />
           </a>
           <button type="button" className={styles.cta} onClick={openForm}>
-            Безкоштовна консультація
-            <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <span className={styles.ctaLabelFull}>Безкоштовна консультація</span>
+            <span className={styles.ctaLabelShort}>Консультація</span>
+            <svg className={styles.ctaIcon} width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
               <path d="M2 12 L12 2 M5 2 H12 V9"/>
             </svg>
           </button>
@@ -97,10 +100,12 @@ export default function Navbar({ transparent = false }: { transparent?: boolean 
           </button>
         </div>
         <nav className={styles.drawerNav} aria-label="Мобільна навігація">
-          <a href="/#proces" onClick={() => setMenuOpen(false)}>Покупка</a>
-          <a href="/#avto" onClick={() => setMenuOpen(false)}>Автомобілі</a>
-          <a href="/#vidguky" onClick={() => setMenuOpen(false)}>Відгуки</a>
-          <a href="/#faq" onClick={() => setMenuOpen(false)}>Питання</a>
+          <a href="/#oplata" onClick={() => setMenuOpen(false)}>Оплата на капоті</a>
+          <a href="/#pro-nas" onClick={() => setMenuOpen(false)}>Про нас</a>
+          <a href="/#perevahy" onClick={() => setMenuOpen(false)}>Чому ми</a>
+          <a href="/#proces" onClick={() => setMenuOpen(false)}>Етапи співпраці</a>
+          <a href="/#faq" onClick={() => setMenuOpen(false)}>Популярні питання</a>
+          <a href="/#viyskovym" onClick={() => setMenuOpen(false)}>Для військових</a>
           <a href="/kontakty" onClick={() => setMenuOpen(false)}>Контакти</a>
         </nav>
         <button

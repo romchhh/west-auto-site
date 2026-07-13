@@ -74,12 +74,32 @@
 
 .subheadline {
   margin-top: 20px;
-  max-width: 36ch;
+  max-width: 42ch;
   font-size: clamp(16px, 1.8vw, 20px);
   font-weight: 500;
   line-height: 1.5;
   color: #fff;
   letter-spacing: 0.01em;
+}
+
+.subheadlineAccent {
+  position: relative;
+  display: inline;
+  font-weight: 700;
+  white-space: nowrap;
+  padding-bottom: 4px;
+}
+
+.subheadlineUnderline {
+  position: absolute;
+  left: -2%;
+  right: -2%;
+  bottom: -10px;
+  width: 104%;
+  height: 14px;
+  color: var(--primary-red);
+  overflow: visible;
+  pointer-events: none;
 }
 
 .bottomRow {

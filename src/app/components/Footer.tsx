@@ -45,12 +45,12 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.top}>
         <nav className={styles.links} aria-label="Навігація в підвалі">
-          <a href="/#oplata">Оплата</a>
+          <a href="/#oplata">Оплата на капоті</a>
+          <a href="/#pro-nas">Про нас</a>
           <a href="/#perevahy">Чому ми</a>
-          <a href="/#proces">Етапи</a>
-          <a href="/#avto">Автомобілі</a>
-          <a href="/#vidguky">Відгуки</a>
-          <a href="/#faq">Питання</a>
+          <a href="/#proces">Етапи співпраці</a>
+          <a href="/#faq">Популярні питання</a>
+          <a href="/#viyskovym">Для військових</a>
           <a href="/kontakty">Контакти</a>
         </nav>
 

@@ -178,7 +178,6 @@
   display: flex;
   flex-direction: column;
   gap: 0;
-  counter-reset: payment-step;
 }
 
 .paymentStepsList li {
@@ -187,7 +186,6 @@
   align-items: flex-start;
   gap: 14px;
   padding: 0 0 20px 0;
-  counter-increment: payment-step;
 }
 
 .paymentStepsList li:not(:last-child)::after {
@@ -214,10 +212,6 @@
   color: #fff;
   font-size: 12px;
   font-weight: 700;
-}
-
-.paymentStepMarker::before {
-  content: counter(payment-step);
 }
 
 .paymentStepFinal .paymentStepMarker {

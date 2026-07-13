@@ -36,7 +36,13 @@ export default function Hero() {
             Твоє авто<br />з <em>Америки</em>
           </h1>
           <p className={styles.subheadline}>
-            Підбір, купівля та доставка під ключ — з гарантією прозорої ціни
+            Підбір, купівля та доставка під ключ з{' '}
+            <span className={styles.subheadlineAccent}>
+              оплатою на капоті
+              <svg className={styles.subheadlineUnderline} viewBox="0 0 200 18" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M1 12 C 35 3, 75 16, 110 8 C 145 1, 170 14, 199 7" fill="none" stroke="currentColor" strokeWidth="4.5" strokeLinecap="round" />
+              </svg>
+            </span>
           </p>
         </div>
 

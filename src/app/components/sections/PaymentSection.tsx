@@ -45,7 +45,9 @@ export default function PaymentSection() {
             <ol className={styles.paymentStepsList}>
               {PAYMENT_STEPS.map((step, index) => (
                 <li key={step} className={index === PAYMENT_STEPS.length - 1 ? styles.paymentStepFinal : undefined}>
-                  <span className={styles.paymentStepMarker} aria-hidden="true" />
+                  <span className={styles.paymentStepMarker} aria-hidden="true">
+                    {index + 1}
+                  </span>
                   <span className={styles.paymentStepText}>{step}</span>
                 </li>
               ))}
